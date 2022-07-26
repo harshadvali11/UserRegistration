@@ -1,0 +1,18 @@
+{% extends 'dummy.html' %}
+{% block title %}
+    <title>Details Page</title>
+{% endblock %}
+
+
+{% block body_block %}
+<center>
+        <h1>Displaying the details of user</h1>
+        <h2>username is {{ud.username}}</h2>
+        <h2>Email is {{ud.email}}</h2>
+        <h2>Address is {{pd.address}}</h2>
+        <h2>Profile picture is </h2>
+        {{pd.profile_pic.url}}
+        <img src="{{pd.profile_pic.url}}" alt="no image">
+</center>
+    {% endblock %}
+    
